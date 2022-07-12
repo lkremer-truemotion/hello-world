@@ -1,0 +1,7 @@
+{
+  "name": "hello-world",
+  "version": "1.0.1",
+  "dependencies": {
+    "standard-version": "^7.1.0"
+  }
+}
