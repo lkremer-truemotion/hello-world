@@ -3,8 +3,7 @@ import subprocess
 #process = subprocess.run(["git","add","-p","&&","git","commit"])
 
 commd = "git add -p && git commit"
-commdfixed = """git add -p && git diff-index --quiet HEAD || git commit -m 
-'bla'"""
+commdfixed = "git add -p && git diff-index --quiet HEAD || git commit"
 
 def runcommand (cmd):
     proc = subprocess.Popen(cmd,
