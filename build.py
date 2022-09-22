@@ -2,7 +2,7 @@ import subprocess
 
 #process = subprocess.run(["git","add","-p","&&","git","commit"])
 
-cmd = "git add -p && git commit"
+commd = "git add -p && git commit"
 
 def runcommand (cmd):
     proc = subprocess.Popen(cmd,
@@ -15,9 +15,9 @@ def runcommand (cmd):
 
 def main():
     print("==================================================");
-    print('Running "ls -lh"...');
+    print('Running ...');
     print("==================================================");
-    code, out, err = runcommand("ls -lh");
+    code, out, err = runcommand(commd);
     print("Return code: {}".format(code));
     print("--------------------------------------------------");
     print("stdout:");
