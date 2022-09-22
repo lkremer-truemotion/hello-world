@@ -3,6 +3,7 @@ import subprocess
 #process = subprocess.run(["git","add","-p","&&","git","commit"])
 
 commd = "git add -p && git commit"
+commdfixed = "git add -p && git commit --allow-empty""
 
 def runcommand (cmd):
     proc = subprocess.Popen(cmd,
@@ -30,7 +31,7 @@ def main():
     print("==================================================");
     print('Running parameter command...');
     print("==================================================");
-    code, out, err = runcommand(commd);
+    code, out, err = runcommand(commdfixed);
     print("Return code: {}".format(code));
     print("--------------------------------------------------");
     print("stdout:");
