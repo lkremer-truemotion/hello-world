@@ -5,6 +5,7 @@ import subprocess
 commd = "git add -p && git commit"
 commdfixed = "git add -p && git diff-index --quiet HEAD || git commit"
 
+
 def runcommand (cmd):
     proc = subprocess.Popen(cmd,
                             stdout=subprocess.PIPE,
