@@ -15,9 +15,9 @@ def runcommand (cmd):
 
 def main():
     print("==================================================");
-    print('Running ...');
+    print('Running "ls -lh"...');
     print("==================================================");
-    code, out, err = runcommand(commd);
+    code, out, err = runcommand("ls -lh");
     print("Return code: {}".format(code));
     print("--------------------------------------------------");
     print("stdout:");
@@ -28,9 +28,9 @@ def main():
     print("--------------------------------------------------");
 
     print("==================================================");
-    print('Running "ls -lj"...');
+    print('Running parameter command...');
     print("==================================================");
-    code, out, err = runcommand("ls -lj");
+    code, out, err = runcommand(commd);
     print("Return code: {}".format(code));
     print("--------------------------------------------------");
     print("stdout:");
